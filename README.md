@@ -1,2 +1,4 @@
-# Proyecto-3-MC
-AstroUTFSM
+Población estelar y evolución química. 
+
+En este proyecto generamos una población estelar mediante Monte Carlo. 
+Usamos la IMF de Kroupa y una formación estelar constante durante 10 Gyr para calcular masas, edades y remanentes. Luego comparamos las metalicidades de los modelos de caja cerrada e infall con la muestra de Haywood (2001). El código está en Proyecto_Mc_final.ipynb y el informe en Proyecto_3 MC.pdf. El archivo haywood.csv debe estar dentro de la carpeta datos_mc junto al notebook. Para ejecutarlo se necesita Jupyter y las siguientes bibliotecas: pip install numpy scipy matplotlib astropy astroquery notebook Abrir Jupyter desde la carpeta del proyecto y ejecutar todas las celdas del notebook en orden. Las figuras, tablas y datos se guardan automáticamente en resultados_mc. Los parámetros principales están en PARAM. Las funciones del notebook generan las masas y nacimientos, calculan la evolución estelar, asignan remanentes y construyen las historias químicas y las distribuciones de metalicidad. Las semillas quedan registradas para poder repetir las simulaciones. Trabajamos con una sola zona, sin binarias, con mezcla instantánea y rendimiento químico constante. Para comparar con las observaciones usamos [M/H] ≈ [Fe/H]. La muestra de Haywood se utiliza sin las correcciones adicionales de selección del artículo.
